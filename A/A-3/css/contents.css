@@ -1,0 +1,173 @@
+@charset "utf-8";
+
+/* tap */
+#contents .tap {
+  padding: 20px;
+}
+
+/* tapMenu */
+#contents .tap .tapMenu {
+  height: 20%;
+}
+
+#contents .tap .tapMenu ul {
+  display: flex;
+  height: 100%;
+}
+
+#contents .tap .tapMenu ul li {
+  display: flex;
+  height: 100%;
+}
+
+#contents .tap .tapMenu ul li button {
+  width: 100%;
+  height: 100%;
+  padding: 0 10px;
+  font-size: 18px;
+  background-color: var(--bg3);
+}
+
+#contents .tap .tapMenu ul li.active button,
+#contents .tap .tapMenu ul li button:hover {
+  background-color: #fff;
+  font-weight: 700;
+}
+
+/* tapContent */
+#contents .tap .tapContent {
+  position: relative;
+  height: 80%;
+  background-color: #fff;
+}
+
+#contents .tap .tapContent div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: none;
+}
+
+#contents .tap .tapContent div.active {
+  display: flex;
+}
+
+/* tapContent -notice */
+#contents .tap .tapContent .notice {}
+
+#contents .tap .tapContent .notice ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contents .tap .tapContent .notice ul li {}
+
+#contents .tap .tapContent .notice ul li a {
+  width: 100%;
+  display: flex;
+  gap: 20px;
+}
+
+#contents .tap .tapContent .notice ul li a span:first-child {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#contents .tap .tapContent .notice ul li a span:last-child {}
+
+#contents .tap .tapContent .notice ul li a:hover {
+  text-decoration: underline;
+}
+
+/* tapContent -gallery */
+#contents .tap .tapContent .gallery {}
+
+#contents .tap .tapContent .gallery ul {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+#contents .tap .tapContent .gallery ul li {
+  width: calc((100% - 10px * 2) / 3);
+}
+
+#contents .tap .tapContent .gallery ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#contents .tap .tapContent .gallery ul li a img {
+  transition: 0.6s;
+}
+
+#contents .tap .tapContent .gallery ul li a:hover img {
+  transform: scale(1.1);
+}
+
+/* banner */
+#contents .banner {}
+
+#contents .banner a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#contents .banner a img {
+  transition: 0.6s;
+}
+
+#contents .banner a:hover img {
+  transform: scale(1.05);
+}
+
+#contents .banner a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+}
+
+/* link */
+#contents .link {}
+
+#contents .link a {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#contents .link a img {
+  transition: 0.6s;
+}
+
+#contents .link a:hover img {
+  transform: scale(1.05);
+}
+
+#contents .link a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: inline-block;
+  padding: 10px 20px;
+}

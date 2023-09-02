@@ -1,0 +1,77 @@
+@charset "utf-8";
+
+/* logo */
+#header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#header .logo a {
+  display: block;
+  width: 200px;
+  height: 40px;
+}
+
+#header .logo a img {}
+
+/* nav */
+#header .nav {
+  padding-right: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  z-index: 999;
+}
+
+#header .nav>ul {
+  display: flex;
+}
+
+#header .nav>ul>li {
+  position: relative;
+}
+
+#header .nav>ul>li>a {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--main);
+  color: #fff;
+  transition: 0.3s;
+}
+
+#header .nav>ul>li.active>a,
+#header .nav>ul>li>a:hover {
+  background-color: var(--sub2);
+}
+
+#header .nav>ul>li>ul {
+  position: absolute;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+#header .nav>ul>li.active>ul {
+  height: calc(40px * 4);
+}
+
+#header .nav>ul>li>ul>li {}
+
+#header .nav>ul>li>ul>li>a {
+  width: 150px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sub2);
+  color: white;
+  transition: 0.3s;
+}
+
+#header .nav>ul>li>ul>li>a:hover {
+  background-color: var(--sub1);
+}

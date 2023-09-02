@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+#tap {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* tapMenu */
+#tap .tapMenu {
+  height: 20%;
+}
+
+#tap .tapMenu ul {
+  height: 100%;
+  display: flex;
+}
+
+#tap .tapMenu ul li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#tap .tapMenu ul li button {
+  height: 100%;
+  padding: 0 15px;
+  background-color: var(--bg3);
+  font-size: 18px;
+}
+
+#tap .tapMenu ul li.active button,
+#tap .tapMenu ul li button:hover {
+  font-weight: 700;
+  background-color: #fff;
+}
+
+/* tapContent */
+#tap .tapContent {
+  height: 80%;
+  position: relative;
+  background-color: #fff;
+}
+
+#tap .tapContent div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: none;
+}
+
+#tap .tapContent div.active {
+  display: flex;
+}
+
+/* tapContent - notice */
+#tap .tapContent .notice {}
+
+#tap .tapContent .notice ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#tap .tapContent .notice ul li {}
+
+#tap .tapContent .notice ul li a {
+  display: flex;
+  gap: 30px;
+}
+
+#tap .tapContent .notice ul li a:hover {
+  text-decoration: underline;
+}
+
+#tap .tapContent .notice ul li a span:first-child {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#tap .tapContent .notice ul li a span:last-child {}
+
+/* tapContent - gallery */
+#tap .tapContent .gallery {}
+
+#tap .tapContent .gallery ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#tap .tapContent .gallery ul li {
+  width: calc((100% - 15px * 2) / 3);
+}
+
+#tap .tapContent .gallery ul li a {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#tap .tapContent .gallery ul li a img {
+  height: 80%;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.6s;
+}
+
+#tap .tapContent .gallery ul li a:hover img {
+  opacity: 1.0;
+  transform: scale(1.05);
+}
+
+#tap .tapContent .gallery ul li a span {
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+#tap .tapContent .gallery ul li a:hover span {
+  text-decoration: underline;
+}

@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+#wrap {
+  width: 100%;
+}
+
+/* header */
+#header {
+  width: 100%;
+  background-color: var(--bg2);
+}
+
+#header .headerWrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#header .logo {
+  width: 20%;
+  height: 100px;
+  background-color: var(--bg2);
+}
+
+#header .nav {
+  width: 80%;
+  height: 100px;
+  background-color: var(--bg2);
+}
+
+/* slider */
+#slider {
+  width: 1200px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+/* contents */
+#contents {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#contents .notice {
+  width: calc(100% / 3);
+  height: 200px;
+  background-color: var(--sub1);
+}
+
+#contents .gallery {
+  width: calc(100% / 3);
+  height: 200px;
+  background-color: var(--sub1);
+}
+
+#contents .link {
+  width: calc(100% / 3);
+  height: 200px;
+}
+
+/* footer */
+#footer {
+  width: 100%;
+  background-color: var(--bg2);
+}
+
+#footer .footerWrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#footer .copyright {
+  width: 80%;
+  height: 100px;
+  background-color: var(--sub2);
+}
+
+#footer .sns-familysite {
+  width: 20%;
+}
+
+#footer .sns-familysite .sns {
+  width: 100%;
+  height: 50px;
+  background-color: var(--main);
+}
+
+#footer .sns-familysite .familysite {
+  width: 100%;
+  height: 50px;
+  background-color: var(--main);
+}

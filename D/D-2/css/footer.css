@@ -1,0 +1,47 @@
+@charset "utf-8";
+
+/* logo */
+#footer .logo {
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+
+#footer .logo a {
+  width: 100%;
+  height: 100%;
+}
+
+#footer .logo a img {
+  filter: grayscale(1);
+}
+
+/* copyright */
+#footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .copyright p {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* familysite */
+#footer .familysite {
+  padding: 0 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .familysite select {
+  width: 100%;
+  padding: 5px;
+  font-size: 12px;
+}
+
+#footer .familysite select option {
+  font-size: 12px;
+}

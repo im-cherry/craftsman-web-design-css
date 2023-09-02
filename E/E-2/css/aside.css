@@ -1,0 +1,87 @@
+@charset "utf-8";
+
+/* aside */
+#aside .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#aside .logo a {
+  width: 190px;
+  height: 45px;
+}
+
+#aside .logo a img {}
+
+/* nav */
+#aside .nav {
+  padding: 15px;
+}
+
+#aside .nav>ul {
+  position: relative;
+  z-index: 999;
+}
+
+#aside .nav>ul>li {
+  border-bottom: 1px solid var(--bg2);
+  transition: 0.3s;
+}
+
+#aside .nav>ul>li:not(:first-child).active {
+  margin: 10px 0;
+}
+
+#aside .nav>ul>li:first-child.active {
+  margin-bottom: 10px;
+}
+
+#aside .nav>ul>li>a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sub1);
+  transition: 0.3s;
+}
+
+#aside .nav>ul>li.active>a,
+#aside .nav>ul>li>a:hover {
+  background-color: var(--main);
+  color: #fff;
+}
+
+#aside .nav>ul>li>ul {
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+#aside .nav>ul>li.active>ul {
+  height: calc(50px * 4);
+}
+
+#aside .nav>ul>li:nth-child(4).active>ul {
+  height: calc(50px * 3);
+}
+
+#aside .nav>ul>li>ul>li {
+  border-bottom: 1px solid var(--bg2);
+}
+
+#aside .nav>ul>li>ul>li>a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  transition: 0.3s;
+}
+
+#aside .nav>ul>li>ul>li>a:hover {
+  background-color: var(--sub2);
+  color: #fff;
+}

@@ -1,0 +1,84 @@
+@charset "utf-8";
+
+/* copyright */
+#footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#footer .copyright p {
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+/* sns */
+#footer .sns-familysite .sns {}
+
+#footer .sns-familysite .sns ul {
+  display: flex;
+  padding: 0 30px;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#footer .sns-familysite .sns ul li {
+  width: 30px;
+  height: 30px;
+}
+
+#footer .sns-familysite .sns ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+#footer .sns-familysite .sns ul li a span {
+  display: inline-block;
+  padding: 5px;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-origin: content-box;
+  color: transparent;
+}
+
+#footer .sns-familysite .sns ul li a span.facebook {
+  background-image: url("../images/facebook.svg");
+}
+
+#footer .sns-familysite .sns ul li a span.instagram {
+  background-image: url("../images/instagram.svg");
+}
+
+#footer .sns-familysite .sns ul li a span.youtube {
+  background-image: url("../images/youtube.svg");
+}
+
+#footer .sns-familysite .sns ul li a:hover span {
+  transform: scale(1.1);
+}
+
+/* familysite */
+#footer .sns-familysite .familysite {
+  padding: 0 60px;
+  display: flex;
+  align-items: center;
+}
+
+#footer .sns-familysite .familysite select {
+  width: 100%;
+  padding: 0 5px;
+  font-size: 12px;
+}
+
+#footer .sns-familysite .familysite option {
+  font-size: 12px;
+}

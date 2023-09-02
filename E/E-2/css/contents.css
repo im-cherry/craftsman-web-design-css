@@ -1,0 +1,192 @@
+@charset "utf-8";
+
+/* notice */
+#contents .notice {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contents .notice .title {
+  align-self: flex-start;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+#contents .notice .title p {
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#contents .notice .content {
+  height: 85%;
+  background-color: #fff;
+}
+
+#contents .notice .content ul {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#contents .notice .content ul li {}
+
+#contents .notice .content ul li a {
+  display: flex;
+  gap: 30px;
+}
+
+#contents .notice .content ul li a:hover {
+  text-decoration: underline;
+}
+
+#contents .notice .content ul li a span:first-child {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#contents .notice .content ul li a span:last-child {}
+
+/* gallery */
+#contents .gallery {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+#contents .gallery .title {
+  align-self: flex-start;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+
+#contents .gallery .title p {
+  padding: 0 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+#contents .gallery .content {
+  height: 85%;
+  background-color: #fff;
+}
+
+#contents .gallery .content ul {
+  width: 100%;
+  height: 100%;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contents .gallery .content ul li {
+  width: calc((100% - 15px * 1) / 2);
+}
+
+#contents .gallery .content ul li a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  overflow: hidden;
+}
+
+#contents .gallery .content ul li a span {}
+
+#contents .gallery .content ul li a span:first-child {
+  height: 85%;
+  overflow: hidden;
+}
+
+#contents .gallery .content ul li a span:first-child img {
+  object-fit: cover;
+  filter: brightness(0.9);
+  transition: 0.6s;
+}
+
+#contents .gallery .content ul li a span:first-child:hover img {
+  filter: brightness(1);
+  transform: scale(1.05);
+}
+
+#contents .gallery .content ul li a span:last-child {
+  height: 15%;
+  text-align: center;
+}
+
+#contents .gallery .content ul li a:hover span:last-child {
+  text-decoration: underline;
+}
+
+/* link */
+#contents .link {
+  padding: 0 30px;
+}
+
+#contents .link ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contents .link ul li {}
+
+#contents .link ul li a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+#contents .link ul li a span {}
+
+#contents .link ul li a span:first-child {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 1px 1px 2px 2px var(--bg4);
+  color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+#contents .link ul li a:hover span:first-child {
+  box-shadow: 1px 1px 2px 3px var(--bg4);
+}
+
+#contents .link ul li a span.link1 {
+  background-image: url("../images/link1.jpg");
+}
+
+#contents .link ul li a span.link2 {
+  background-image: url("../images/link2.jpg");
+}
+
+#contents .link ul li a span.link3 {
+  background-image: url("../images/link3.jpg");
+}
+
+#contents .link ul li a span.link4 {
+  background-image: url("../images/link4.jpg");
+}
+
+#contents .link ul li a span:last-child {}
+
+#contents .link ul li a:hover span:last-child {
+  text-decoration: underline;
+}

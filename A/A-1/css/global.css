@@ -1,0 +1,64 @@
+@charset "utf-8";
+
+:root {
+  --main: #ffae00;
+  --sub1: #ffe100;
+  --sub2: #ff7d00;
+  --bg1: #fafafa;
+  --bg2: #eee;
+  --bg3: #bdbdbd;
+  --bg4: #757575;
+
+  --b0: rgba(0, 0, 0, 0.05);
+  --b1: rgba(0, 0, 0, 0.1);
+  --b2: rgba(0, 0, 0, 0.15);
+  --b3: rgba(0, 0, 0, 0.2);
+  --b4: rgba(0, 0, 0, 0.25);
+  --b5: rgba(0, 0, 0, 0.3);
+  --b6: rgba(0, 0, 0, 0.35);
+  --b7: rgba(0, 0, 0, 0.4);
+  --b8: rgba(0, 0, 0, 0.45);
+  --b9: rgba(0, 0, 0, 0.5);
+  --b10: rgba(0, 0, 0, 0.55);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+body {
+  background-color: #fff;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+}
+
+h6 {
+  display: none;
+}

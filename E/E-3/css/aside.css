@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/* logo */
+#aside .logo {
+  padding: 15px;
+  display: flex;
+  align-items: center;
+}
+
+#aside .logo a {}
+
+#aside .logo a img {}
+
+/* nav */
+#aside .nav {
+  padding: 15px;
+}
+
+#aside .nav>ul {
+  position: relative;
+  z-index: 999;
+}
+
+#aside .nav>ul>li {
+  position: relative;
+  border-bottom: 1px solid var(--bg1);
+  transition: margin 0.3s;
+}
+
+#aside .nav>ul>li.active {
+  margin: 10px 0;
+}
+
+#aside .nav>ul>li:first-child.active {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+
+#aside .nav>ul>li>a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sub1);
+  transition: 0.3s;
+}
+
+#aside .nav>ul>li.active>a,
+#aside .nav>ul>li>a:hover {
+  background-color: var(--sub2);
+  color: #fff;
+}
+
+#aside .nav>ul>li>ul {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  transition: 0.6s;
+}
+
+#aside .nav>ul>li:nth-child(1).active>ul,
+#aside .nav>ul>li:nth-child(2).active>ul {
+  height: calc(50px * 4);
+}
+
+#aside .nav>ul>li:nth-child(3).active>ul,
+#aside .nav>ul>li:nth-child(4).active>ul {
+  height: calc(50px * 3);
+}
+
+#aside .nav>ul>li>ul>li {}
+
+#aside .nav>ul>li>ul>li>a {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--sub2);
+  color: #fff;
+  transition: 0.3s;
+}
+
+#aside .nav>ul>li>ul>li>a:hover {
+  background-color: var(--main);
+}
