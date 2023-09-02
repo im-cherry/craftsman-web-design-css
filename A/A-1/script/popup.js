@@ -9,4 +9,3 @@ noticeContentEl.addEventListener("click", () => {
 popupCloseBtnEl.addEventListener("click", () => {
   popupEl.classList.remove("active");
 });
-console.log(noticeContentEl);
